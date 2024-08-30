@@ -9,6 +9,10 @@ const doesExist = (username) => {
     return users.some((user) => user.username === username);
   };
 
+const getAllBooks = () => {
+  return books;
+}
+
 public_users.post("/register", (req,res) => {
   //Write your code here
   const username = req.body.username;
